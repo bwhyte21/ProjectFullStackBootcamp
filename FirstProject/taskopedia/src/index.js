@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './scss/style.scss';
+import "./scss/style.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -27,13 +27,43 @@ function Header() {
 }
 
 function MainBody() {
+  const whatWeWillLearn = "React JS";
+  const numberOfLectures = 3;
+
   return (
     <div>
-      <p>In this course, we will learn ReactJS by building TaskOPedia!</p>
+      <p>
+        In this course, we will learn {whatWeWillLearn} by building TaskOPedia! <br />
+        Total lectures - {numberOfLectures}{" "}
+      </p>
       <ul>
-        <li>Call Ben</li>
-        <li>Go to Walmart</li>
+        <li>Basic Foundation</li>
+        <li>Functional and Class Components</li>
       </ul>
+      {/*<div>
+      Enter task :{" "}
+      <input maxLength={10} placeholder="Get Groceries"/>
+  </div>*/}
+    </div>
+  );
+}
+
+function Students() {
+  const fullName = "Kris Walley";
+  const programmingExp = 2;
+  return (
+    <div className="container p-4">
+      <div className="row">Students Enrolled</div>
+      <div className="row border">
+        <div className="col-2">
+          <img src={`https://ui-avatars.com/api/?name=${fullName}`} className="w-100" alt={fullName} />
+        </div>
+        <div className="col-10">
+          {fullName}
+          <br />
+          Programming Experience: {programmingExp} years
+        </div>
+      </div>
     </div>
   );
 }
@@ -47,6 +77,7 @@ root.render(
     <div>
       <Header />
       <MainBody />
+      <Students />
       <Footer />
     </div>
   </React.StrictMode>

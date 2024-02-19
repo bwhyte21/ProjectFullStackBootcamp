@@ -1,6 +1,6 @@
 import React from "react";
-import Student from "../student/Student";
-import StudentReview from "../student/StudentReview";
+import Student from "./student/Student";
+import StudentReview from "./student/StudentReview";
 
 function MainBody() {
   const whatWeWillLearn = "React JS";

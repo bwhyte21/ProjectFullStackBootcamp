@@ -1,6 +1,5 @@
 import React from "react";
 
-// Another way of creating typescript functions.
 const StudentReview = () => {
   return (
     <div className="p-2">

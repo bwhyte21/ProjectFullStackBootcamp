@@ -8,10 +8,14 @@ function Student(props) {
         <div className="col-2">
           <img src={faker.image.avatar()} className="w-100 py-2" alt={props.name} />
         </div>
-        <div className="col-10">
+        <div className="col-8">
           {props.name}
           <br />
           Programming Experience: {props.experience} years
+        </div>
+        <div className="col-2">
+          {/* So apparently, if you drop a component (<StudentReview/>) between the parent tags(<Student ..props></Student>), it is considered a prop child... */}
+          {props.children}
         </div>
       </div>
     </div>

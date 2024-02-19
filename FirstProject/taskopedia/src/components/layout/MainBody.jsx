@@ -1,5 +1,6 @@
 import React from "react";
-import Student from "../Student";
+import Student from "../student/Student";
+import StudentReview from "../student/StudentReview";
 
 function MainBody() {
   const whatWeWillLearn = "React JS";
@@ -17,8 +18,12 @@ function MainBody() {
           <li>Functional and Class Components</li>
         </ul>
         <div className="container row">Students Enrolled</div>
-        <Student experience={2} name="Peter Parker" />
-        <Student experience={5} name="Tony Stark" />
+        <Student experience={2} name="Peter Parker">
+          <StudentReview />
+        </Student>
+        <Student experience={5} name="Tony Stark">
+          <StudentReview />
+        </Student>
         <Student experience={7} name="James Howlett" />
       </div>
     </div>

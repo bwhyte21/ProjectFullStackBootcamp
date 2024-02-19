@@ -1,12 +1,19 @@
 import React from "react";
+import logo from "../../images/react.png";
 
 function MainHeader() {
-  return <h1 className="heading1">REACT COURSE</h1>;
+  return (
+    <div className="heading1 pl-2 pt-3 py-1">
+      <img src={logo} alt="react.png" className="header-logo" />
+      <span className="h2 pt-4 text-white-50">React Course - TaskOPedia</span>
+    </div>
+  );
 }
 
 const subHeaderStyle = {
-  color: "blueviolet",
   backgroundColor: "lightgray",
+  color: "blueviolet",
+  textAlign: "center",
 };
 
 function SubHeader() {

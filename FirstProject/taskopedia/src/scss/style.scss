@@ -2,6 +2,15 @@ body {
   background-color: black;
 }
 
+.index-container {
+  background-color: black;
+  color: gray;
+}
+
+.main-body_container {
+  min-height: 70vh;
+}
+
 .heading1 {
   background-color: black;
   font-size: large;
@@ -14,4 +23,11 @@ body {
 .header-logo {
   height: 2.1875em;
   vertical-align: top;
+}
+
+.footer__p {
+  background-color: black;
+  color: gray;
+  margin-top: 0.625em;
+  text-align: center;
 }

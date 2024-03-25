@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+
+.body_container {
+  min-height: 70vh;
+}
+
+.header_border {
+  border-bottom: 0.0625em solid #777;
+}
+
+.header_logo {
+  height: 2.1875em;
+  vertical-align: top;
+}
+
+.footer {
+  background-color: black;
+  color: gray;
+  margin-top: 0.625em;
+  text-align: center;
+}
